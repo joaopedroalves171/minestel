@@ -41,7 +41,7 @@ while True:
         current_time = datetime.now(timezone)
 
         # Adiciona 2 minutos ao tempo atual
-        expiration_time = current_time + timedelta(minutes=2)
+        expiration_time = current_time + timedelta(minutes=5)
 
         # Formata a hora como uma string legível no formato de 24 horas
         expiration_time_str = expiration_time.strftime('%H:%M')
@@ -61,7 +61,7 @@ while True:
             ✅✅ GRENN! ✅✅'''
 
         bot.send_message(chat_id=chat_id, text=entrada, parse_mode='HTML', disable_web_page_preview=True)
-        time.sleep(120)
+        time.sleep(300)
         bot.send_message(chat_id=chat_id, text=msg, parse_mode='HTML', disable_web_page_preview=True)
 
         print('MATRIZ ENVIADA')
