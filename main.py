@@ -57,8 +57,8 @@ while True:
 <a href="http://affiliates.revoada.com/tracking?affuserid=4369815&bannerid=4307">👉Cadastre-se & Jogue👈</a>
 '''
 
-        msg = f'''🔹<b>Sinal Finalizado</b>🔹
-<b>{expiration_time_str}</b>'''
+        msg = f'''🔷🔹 <b>Entrada Finalizada</b> 🔹🔷
+            ✅✅ GRENN! ✅✅'''
 
         bot.send_message(chat_id=chat_id, text=entrada, parse_mode='HTML', disable_web_page_preview=True)
         time.sleep(120)
