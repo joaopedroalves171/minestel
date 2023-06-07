@@ -63,7 +63,7 @@ while True:
         bot.send_message(chat_id=chat_id, text=entrada, parse_mode='HTML', disable_web_page_preview=True)
         time.sleep(300)
         bot.send_message(chat_id=chat_id, text=msg, parse_mode='HTML', disable_web_page_preview=True)
-
+        time.sleep(300)
         print('MATRIZ ENVIADA')
         print(matrix_str)
 
