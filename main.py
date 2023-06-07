@@ -54,7 +54,7 @@ while True:
 
 {matrix_str}
 
-<a href="http://affiliates.revoada.com/tracking?affuserid=4369815&bannerid=4307">👉Cadastre-se & Jogue👈</a>
+<a href="https://bit.ly/CadastroRevoada">👉Cadastre-se & Jogue👈</a>
 '''
 
         msg = f'''🔷🔹 <b>Entrada Finalizada</b> 🔹🔷
