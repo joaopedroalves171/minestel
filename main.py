@@ -54,7 +54,7 @@ while True:
 
 {matrix_str}
 
-<a href="https://go.aff.vembetar.com/ahrrszh0">👉Cadastre-se & Jogue👈</a>
+<a href="https://go0.io/?XPYUG">👉Cadastre-se & Jogue👈</a>
 '''
 
         msg = f'''🔷🔹 <b>Entrada Finalizada</b> 🔹🔷
