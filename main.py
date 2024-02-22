@@ -4,8 +4,8 @@ import time
 from datetime import datetime, timedelta
 import pytz
 
-token = ''
-chat_id = '-1002080001176'
+token = 'AAG4Bw83egI0XgfnbO5s8Ke7HwF6QBRJWJY'
+chat_id = '6807897915'
 bot = telebot.TeleBot(token)
 
 # Definir o fuso horário para São Paulo
