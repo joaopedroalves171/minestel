@@ -7,8 +7,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, CallbackQueryHandler
 import re
 
-token = '6109226718:AAHsI7CYGCg_V-uKfCk1v7QrLb90-A75W-Y'
-chat_id = '-1002111034448'
+token = '6998937646:AAGTINQFtblRM3_Ac9p9zbzVOf_5lUgXi9c'
+chat_id = ''
 bot = telebot.TeleBot(token)
 
 # Definir o fuso horário para São Paulo
