@@ -5,7 +5,7 @@ import time
 from datetime import datetime, timedelta
 import pytz
 
-TOKEN = '7031047791:AAHXD6lV46Go0BcGVxa2OJ1BxRQgwoi1kkM'
+TOKEN = '6418307874:AAG9UvZp9k5WTUe_w6_a2AYPdf_mV-jw4nYs'
 bot = telebot.TeleBot(TOKEN)
 
 # Definir o fuso horário para São Paulo
