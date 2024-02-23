@@ -4,7 +4,7 @@ import time
 from datetime import datetime, timedelta
 import pytz
 
-token = '762352388'
+token = '6109226718:AAHsI7CYGCg_V-uKfCk1v7QrLb90-A75W-Y'
 chat_id = '-1002111034448'
 bot = telebot.TeleBot(token)
 
