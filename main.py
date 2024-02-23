@@ -17,11 +17,6 @@ num_bombs = 6  # número de Estrelas
 
 start_enabled = True
 
-@'http://gebemoney.tilda.ws/gebe_16?fbclid=PAAaaKD_f7WR-2evHrcY_tuWj6d-hOwiEYVmeOP6j4a7CxWo8oJ8TjKD3XerE_aem_AWpUflorvWBsyihUyVdFUlp-imnukLjOD-o32eY9Ay7WO44UMBozHzCZ4eHqYe2_El6Dbd00BNqiVaz2e2b8WaIo'
-
-def receber_webhook():
-
-        id = request.json()
 @bot.message_handler(commands=["✅Introduzar teu id"])
 @bot.message_handler(commands=["Id encontrado✅"])
 def send_welcome(message):
