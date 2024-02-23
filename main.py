@@ -3,6 +3,9 @@ import telebot
 import time
 from datetime import datetime, timedelta
 import pytz
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, CallbackQueryHandler
+import re
 
 token = '6109226718:AAHsI7CYGCg_V-uKfCk1v7QrLb90-A75W-Y'
 chat_id = '-1002111034448'
@@ -10,6 +13,39 @@ bot = telebot.TeleBot(token)
 
 # Definir o fuso horário para São Paulo
 timezone = pytz.timezone('America/Sao_Paulo')
+
+def start(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text('Por favor, envie seu ID (apenas números):')
+
+def echo(update: Update, context: CallbackContext) -> None:
+    user_message = update.message.text
+    # Verifica se a mensagem contém apenas números
+    if re.fullmatch(r'\d+', user_message):
+        # Confirma o ID do usuário
+        update.message.reply_text(f'Seu ID é {user_message}.')
+        # Cria um botão que direciona para um link
+        keyboard = [[InlineKeyboardButton("Iniciar jogo", url='https://example.com')]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        update.message.reply_text(reply_markup=reply_markup)
+    else:
+        update.message.reply_text('Por favor, envie apenas números.')
+
+def main():
+    # Substitua 'YOUR_TOKEN_HERE' pelo token do seu bot
+    updater = Updater("YOUR_TOKEN_HERE")
+
+    dp = updater.dispatcher
+
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
+
+    updater.start_polling()
+    updater.idle()
+
+if __name__ == '__main__':
+    main()
+
+
 
 while True:
     try:
