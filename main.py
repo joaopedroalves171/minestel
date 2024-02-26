@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 import pytz
 
 
-TOKEN = '6891220585:AAH0mT-cmkSorNVh8qYgL4VaSm3xfArG_NY'
-bot = telebot.TeleBot(TOKEN)
+TOKEN = "6891220585:AAH0mT-cmkSorNVh8qYgL4VaSm3xfArG_NY"
+bot = telebot.teleBot(TOKEN)
 
 # Definir o fuso horário para São Paulo
 timezone = pytz.timezone('America/Sao_Paulo')
